@@ -1,0 +1,21 @@
+<h1 id="titol">Titol de prova</h1>
+<p id="text">Hola</p>
+<p>URL: {{ Prova }}</p>
+<p id="yellow">aaaaaa</p>
+<table id="provaTaula">
+  <th>hola</th>
+  <th>adeu</th>
+</table>
+
+<ul>
+  <li *ngFor="let element of llistaElements">
+    <span [style.fontSize.px]="midaLletra">{{ element.charAt(0) }}</span>{{ element.slice(1) }}</li>
+</ul>
+<button (click)="augmentar()">Augmentar mida primera lletra</button>
+
+<p id="paragraf">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+<p id="resultat"></p>
+
+<p id="foto"></p>
